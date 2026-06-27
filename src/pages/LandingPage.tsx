@@ -3,6 +3,7 @@ import FloatingLines from "../components/LandingPage/FloatingLines";
 import LandingPageHeaderBar from "../components/LandingPage/LandingPageHeaderBar";
 import './LandingPage.css';
 import IntroductionComponent from "../components/LandingPage/IntroductionComponent";
+import FeaturesComponent from "../components/LandingPage/FeaturesComponent";
 
 const LandingPage: React.FC = () => {
     return (
@@ -21,7 +22,7 @@ const LandingPage: React.FC = () => {
                 <LandingPageHeaderBar />
             </div>
             <div className="content-container">
-                <IntroductionComponent />
+                <FeaturesComponent />
             </div>
         </div>
     )
