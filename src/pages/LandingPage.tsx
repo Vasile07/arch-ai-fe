@@ -2,7 +2,7 @@ import React from "react";
 import FloatingLines from "../components/LandingPage/FloatingLines";
 import LandingPageHeaderBar from "../components/LandingPage/LandingPageHeaderBar";
 import './LandingPage.css';
-import WhoIsItForComponent from "../components/LandingPage/WhoIsItForComponent";
+import WhyComponent from "../components/LandingPage/WhyComponent";
 
 const LandingPage: React.FC = () => {
     return (
@@ -21,7 +21,7 @@ const LandingPage: React.FC = () => {
                 <LandingPageHeaderBar />
             </div>
             <div className="content-container">
-                <WhoIsItForComponent />
+                <WhyComponent />
             </div>
         </div>
     )
