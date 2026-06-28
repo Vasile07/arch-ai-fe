@@ -52,13 +52,16 @@
     font-weight: 500;
     border-bottom: 2px solid #FFF;
     width: fit-content;
-    padding: 8px 0;
-background: linear-gradient(
-  to bottom,
-  #120F17 0%,
-  #120F17 45%,
-  #59575d 100%
-);  
+    padding: 8px 5px;
+    background: linear-gradient(
+    to bottom,
+    #120F17 0%,
+    #120F17 40%,
+    #1D1A22 52%,
+    #2A272E 65%,
+    #413F45 82%,
+    #59575D 100%
+    );
 }
 
 .card.feature-card > p {

@@ -1,0 +1,41 @@
+.how-it-works-container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.how-it-works-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15%;
+}
+
+.how-it-works-title-container > p {
+    font-size: 80px;
+    font-weight: 600;
+    color: #fff;
+    /* margin-top: 200px; */
+    text-decoration: underline;
+}
+
+.how-it-works-carrousel-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.features-wrapper {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
