@@ -2,7 +2,6 @@
     width: 100%;
     min-height: 100%;
     display: flex;
-    overflow: hidden;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -13,14 +12,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 15%;
+    flex-shrink: 0;
+    margin-left: 10%;
 }
 
 .features-title-container > p {
     font-size: 80px;
     font-weight: 600;
     color: #fff;
-    margin-top: 200px;
     text-decoration: underline;
 }
 
@@ -29,20 +28,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 .features-wrapper {
+    position: relative; 
     height: 600px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 700px;
+    flex-shrink: 0;
+    margin-right: -90px;   /* Push it toward and slightly off the right edge */
+    margin-top: 160px;      /* Push it down so the top cards peek below center */
 }
 
 .card.feature-card {
-  background: #120F17;
-  border: 2px solid #FFF;
+    background: #120F17;
+    border: 2px solid #FFF;
 }
 
 .card.feature-card > h3 {
@@ -54,13 +53,13 @@
     width: fit-content;
     padding: 8px 5px;
     background: linear-gradient(
-    to bottom,
-    #120F17 0%,
-    #120F17 40%,
-    #1D1A22 52%,
-    #2A272E 65%,
-    #413F45 82%,
-    #59575D 100%
+        to bottom,
+        #120F17 0%,
+        #120F17 40%,
+        #1D1A22 52%,
+        #2A272E 65%,
+        #413F45 82%,
+        #59575D 100%
     );
 }
 
@@ -70,4 +69,3 @@
     color: #d5d5d5;
     font-size: 20px;
 }
-

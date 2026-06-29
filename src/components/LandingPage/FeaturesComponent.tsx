@@ -7,9 +7,9 @@ interface Feature {
     description: string,
 }
 
-const FeaturesComponent : React.FC = () => {
+const FeaturesComponent: React.FC = () => {
 
-    const features : Feature[] = [
+    const features: Feature[] = [
         {
             title: "📄 Analyze Requirements",
             description: "Upload or type software requirements and let ArchAI understand functional and non-functional requirements.",
@@ -47,14 +47,12 @@ const FeaturesComponent : React.FC = () => {
                         width={700}
                         height={600}
                     >
-                        {
-                            features.map(feature => (
-                                <Card className="feature-card" key={feature.title}>
-                                    <h3>{feature.title}</h3>
-                                    <p>{feature.description}</p>
-                                </Card>
-                            ))
-                        }
+                        {features.map(feature => (
+                            <Card className="feature-card" key={feature.title}>
+                                <h3>{feature.title}</h3>
+                                <p>{feature.description}</p>
+                            </Card>
+                        ))}
                     </CardSwap>
                 </div>
             </div>

@@ -8,9 +8,50 @@
 }
 
 .content-container {
-    position: absolute; 
-    bottom: 0;  
-    width: 100%; 
-    height: 80%;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 90%;
+
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.landing-section {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+}
+
+/* Scroll bar */
+
+/* Firefox */
+.content-container {
+    scrollbar-width: thin;
+    scrollbar-color: #e945f5 transparent;
+}
+
+/* Chrome, Safari, Edge */
+.content-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.content-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.content-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #e945f5, #6f6f6f);
+    border-radius: 10px;
+}
+
+.content-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #f060ff, #888);
 }
