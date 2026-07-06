@@ -5,7 +5,8 @@ const LandingPageHeaderBar = () => {
     return (
         <div className="landing-page-header-bar">
             <div className="landing-page-header-icon-container">
-                <img src={appIcon} alt="Icon" style={{ width: '100%', height: '100%' }} />
+                <img src={appIcon} alt="Icon" style={{ height: '100%', aspectRatio: 1/1 }} />
+                <p>ArchAI</p>
             </div>
             <div className="landing-page-header-text-container">
                 <div className="landing-page-header-link">Features</div>

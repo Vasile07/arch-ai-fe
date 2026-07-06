@@ -33,7 +33,7 @@ const LandingPage: React.FC = () => {
                 bendStrength={-0.6}
                 mouseDamping={0.03}
                 parallax
-                parallaxStrength={0.75}
+                parallaxStrength={0.75}  
             />
             <div className="header-container">
                 <LandingPageHeaderBar />
