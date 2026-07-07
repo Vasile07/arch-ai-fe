@@ -1,6 +1,6 @@
 .chat-preview-container {
     width: 480px;
-    height: 460px;
+    height: 500px;
     padding: 10px 16px;
     background-color: #120F14;
     border-radius: 14px 0px 0px 14px;
@@ -25,10 +25,10 @@
 }
 
 .client-chat-text {
-    font-size: 12px;
+    font-size: 11px;
     color: #000;
     font-weight: bold;
-    align-content: end;
+    text-align: end;
 }
 
 .chat-bot-wrapper {
@@ -42,18 +42,18 @@
     padding: 5px 12px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 0px;
 }
 
 .chat-bot-label {
-    font-size: 12px;
+    font-size: 11px;
     color: #FFF;
     font-weight: bold;
     margin: 0;
 }
 
 .chat-bot-row {
-    font-size: 12px;
+    font-size: 11px;
     color: #FFF;
     font-weight: bold;
     display: flex;
@@ -66,10 +66,10 @@
 }
 
 .chat-bot-value {
-    font-size: 12px;
+    font-size: 11px;
     color: #ccc;
     font-weight: normal;
-    margin: 0 0 4px 18px; /* indent under label */
+    margin: 0 0 1px 18px; /* indent under label */
 }
 
 .chat-bot-divider {
@@ -79,7 +79,7 @@
 }
 
 .chat-bot-action {
-    font-size: 12px;
+    font-size: 11px;
     color: #FFF;
     font-weight: bold;
     margin: 0;
@@ -88,7 +88,7 @@
 .cursor {
     display: inline-block;
     width: 2px;
-    height: 12px;
+    height: 11px;
     background: #000;
     margin-left: 2px;
     animation: blink 0.8s step-start infinite;

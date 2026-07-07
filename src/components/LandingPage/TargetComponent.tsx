@@ -35,15 +35,15 @@ const TargetComponent: React.FC<TargetComponentProps> = ({ containerRef }) => {
 
     const targets: { position: Position, item: CardItem }[] = [
         {
-            item: { id: 1, title: "Student", image: student },
+            item: { id: 1, title: "Architects", image: architect },
             position: { topCoeficient: 0, leftCoeficient: 0, rotationAngle: -13 }
         },
         {
-            item: { id: 2, title: "Architects", image: architect },
+            item: { id: 2, title: "Researchers & Students", image: student },
             position: { topCoeficient: 0.78, leftCoeficient: 0.85, rotationAngle: 20 }
         },
         {
-            item: { id: 3, title: "Teams", image: team },
+            item: { id: 3, title: "Engineering Teams", image: team },
             position: { topCoeficient: 1.42, leftCoeficient: 0.03, rotationAngle: 6 }
         }
     ]

@@ -7,7 +7,7 @@ const WhyComponent: React.FC = () => {
         <div className="why-container">
             <div className="focus-text-container">
                 <TrueFocus
-                    sentence="AI-assisted recommendations#Explains architectural decisions#Generates ADRs automatically#Produces architecture diagrams#Based on software engineering best practices"
+                    sentence="SaaS-focused architecture recommendations#Multi-tenancy guidance#Cloud-native best practices#Technology stack recommendations#Interactive architecture diagrams#Architecture Decision Records"
                     separator="#"
                     manualMode={false}
                     blurAmount={7}

@@ -4,14 +4,14 @@ import "./css/ChatPreview.css"
 
 type Phase = "typing-client" | "thinking" | "typing-bot" | "done";
 
-const CLIENT_TEXT = "I need an online banking platform supporting one million users.";
+const CLIENT_TEXT = "Design a project management SaaS for 5,000 organizations with multi-tenancy and Stripe billing.";
 const LOOP_PAUSE_MS = 3000;
 
 const ChatPreview: React.FC = () => {
     const [phase, setPhase] = useState<Phase>("typing-client");
     const [clientDisplayed, setClientDisplayed] = useState("");
     const [dotCount, setDotCount] = useState(0);
-    const [showBot, setShowBot] = useState(false);
+    const [showBot, setShowBot] = useState(false);      
     const [cycle, setCycle] = useState(0);
 
     // Phase 1: type out client text
@@ -61,7 +61,7 @@ const ChatPreview: React.FC = () => {
     return (
         <div className="chat-preview-container">
             <div className="client-chat-wrapper">
-                <div style={{ width: "60%" }}>
+                <div style={{ width: "70%" }}>
                     {clientDisplayed.length > 0 && (
                         <div className="client-chat-container">
                             <p className="client-chat-text">
@@ -108,15 +108,19 @@ interface Line {
 const lines: Line[] = [
     { type: "label", text: "Recommendation" },
     { type: "row", text: "Architecture Style" },
-    { type: "value", text: "Microservices" },
-    { type: "row", text: "Confidence" },
-    { type: "value", text: "92%" },
-    { type: "row", text: "Reasoning" },
-    { type: "value", text: "High scalability" },
-    { type: "value", text: "Independent deployment" },
+    { type: "value", text: "Modular Monolith" },
+    { type: "row", text: "Multi-tenancy" },
+    { type: "value", text: "Shared Database" },
+    { type: "value", text: "Separate Schemas" },
+    { type: "row", text: "Authentication" },
+    { type: "value", text: "OAuth2 + JWT" },
+    { type: "row", text: "Technology" },
+    { type: "value", text: "PostgreSQL" },
+    { type: "value", text: "Redis" },
+    { type: "value", text: "Docker" },
     { type: "divider", text: "" },
-    { type: "action", text: "📄 Generate ADR" },
-    { type: "action", text: "📊 Generate Diagram" },
+    { type: "action", text: "📄 Generate ADRs" },
+    { type: "action", text: "📊 Generate Diagrams" },
 ];
 
 const BotResponse: React.FC<{ onDone: () => void }> = ({ onDone }) => {

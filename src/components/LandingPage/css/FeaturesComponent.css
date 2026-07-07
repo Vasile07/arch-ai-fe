@@ -44,11 +44,18 @@
     border: 2px solid #FFF;
 }
 
-.card.feature-card > h3 {
+.feature-card-title-container > h3 {
     color: #FFF;
     font-size: 30px;
-    margin: 25px auto 40px auto;
     font-weight: 500;
+}
+
+.feature-card-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto 40px auto;
     border-bottom: 2px solid #FFF;
     width: fit-content;
     padding: 8px 5px;
@@ -63,8 +70,14 @@
     );
 }
 
+.feature-title-icon {
+    color: white;
+    display: inline-flex;
+    padding: 0 10px;
+}
+
 .card.feature-card > p {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     color: #d5d5d5;
     font-size: 20px;

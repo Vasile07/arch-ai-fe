@@ -7,7 +7,7 @@ const IntroductionComponent: React.FC = () => {
     return (
         <div className="introduction-container">
             <div className="introduction-text-container">
-                <p className="introduction-subtitle">AI-Powered Software Architecture Assistant</p>
+                <p className="introduction-subtitle">AI-powered assistant for designing Cloud-Native SaaS architectures</p>
                 <p className="introduction-title">ArhcAI</p>
             </div>
             <div className="introduction-content-container">
@@ -19,11 +19,12 @@ const IntroductionComponent: React.FC = () => {
                         <div className="rotation-text-wrapper">
                             <RotatingText
                                 texts={[
-                                    'architecture recommendations',
-                                    'technology choices',
+                                    'architecture blueprints',
+                                    'technology recommendations',
+                                    'architecture diagrams',
                                     'ADRs',
                                     'trade-off analysis',
-                                    'architecture diagrams',
+                                    'SaaS architecture',
                                 ]}
                                 mainClassName="rotating-text-container"
                                 staggerFrom="last"
@@ -52,7 +53,7 @@ const IntroductionComponent: React.FC = () => {
                     </div>
                 </div>
                 <div className="right-side-container">
-                    <div style={{marginTop: 100}}>
+                    <div style={{marginTop: 50}}>
                         <ChatPreview />
                     </div>
                 </div>
