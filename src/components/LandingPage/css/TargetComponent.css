@@ -1,0 +1,73 @@
+.target-main-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    --card-width: 260px;
+    --card-height: 280px;
+}
+
+.card-container{
+    width: var(--card-width);
+    height: var(--card-height);
+    border-radius: 20px;
+    background-color: #120F17;
+    border: 2px solid #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.card-container > p {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 28px;
+    padding: 10px 0;
+}
+
+.card-container > img {
+    width: 60%;
+    aspect-ratio: 1/1;
+}
+
+.animated-wrapper {
+    position: absolute;
+    opacity: 0;
+    /* animation: cardEntrance 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards; */
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform:
+            translateY(80px)
+            scale(0.8)
+            rotate(0deg);
+    }
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1)
+            rotate(var(--rotation));
+    }
+}
+
+.animated-wrapper:hover {
+    z-index: 100;
+}
+
+.animated-wrapper:hover .card-container {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,.3);
+}
+
+.target-main-container.animate .animated-wrapper {
+    animation: cardEntrance 2.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+    /* 'both' instead of 'forwards' — applies from-state during delay too */
+}

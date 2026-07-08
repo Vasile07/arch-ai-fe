@@ -1,0 +1,132 @@
+.introduction-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    gap: 25px;
+}
+
+.introduction-title {
+    font-size: 64px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.introduction-subtitle {
+    font-size: 24px;
+    color: #B5B5B5;
+    font-weight: bold;
+}
+
+.introduction-content-container {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    align-items: row;
+}
+
+.left-side-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.right-side-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.motto-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: nowrap;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 500;
+    transform: translateX(30px);
+}
+
+.introduction-motto {
+    white-space: nowrap;
+}
+
+.rotation-text-wrapper {
+    width: fit-content;
+    min-width: 520px; 
+    flex-shrink: 0;
+}
+
+.rotating-text-container {
+    background-color: #E945F5;
+    width: fit-content;
+    display: flex;
+    padding: 25px 27px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    isolation: isolate;     
+    contain: layout paint;   
+    display: flex;
+    align-items: center;
+}
+
+.rotating-text-container > * {
+    display: inline-flex;
+    overflow: hidden;         
+    padding-bottom: 0.3em;  
+    margin-bottom: -0.3em;  
+}
+
+.introduction-reason-container {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.introduction-buttons-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.introduction-button {
+    width: 230px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+    cursor: pointer;
+    p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}

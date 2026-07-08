@@ -1,0 +1,36 @@
+.who-is-it-for-container {
+    width: 100%;
+    min-height: 100%;        /* match the landing-section */
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.who-is-it-for-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    flex-shrink: 0;
+}
+
+.who-is-it-for-title-container > p {
+    font-size: 80px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.who-is-it-for-target-container {
+    flex: 1;
+    align-self: stretch;     /* stretch to full height of the row */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Remove height: 100% */
+}
