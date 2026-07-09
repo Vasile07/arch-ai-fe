@@ -1,0 +1,27 @@
+.user-profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.user-icon {
+    background-color: #D5A1D8;
+    border: 3px solid #613664;
+    width: 55px;
+    aspect-ratio: 1;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.user-profile-container > p{
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+}
