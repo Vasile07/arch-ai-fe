@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import FloatingLines from "../components/LandingPage/FloatingLines";
 import LandingPageHeaderBar from "../components/LandingPage/LandingPageHeaderBar";
-import './LandingPage.css';
+import './css/LandingPage.css';
 import WhyComponent from "../components/LandingPage/WhyComponent";
 import IntroductionComponent from "../components/LandingPage/IntroductionComponent";
 import FeaturesComponent from "../components/LandingPage/FeaturesComponent";
