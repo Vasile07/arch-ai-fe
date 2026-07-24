@@ -1,0 +1,28 @@
+.projects-page-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.projects-page-body-header-container {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.project-page-scroll-wrapper {
+    flex: 1;
+    overflow-y: scroll;
+    min-height: 0;
+}
+
+.projects-page-projects-container {
+    display: grid;
+    margin: 60px auto;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, 202.5px);
+    justify-content: center;
+    gap: 110px 90px;
+}

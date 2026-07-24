@@ -1,6 +1,6 @@
 import type { Industry } from "../../types/Industry";
 
-export default function mapIndustryToColor(industry: Industry) {
+export default function mapIndustryToColor(industry: Industry | null) {
     const industryColors = {
         Healthcare: {color: "#D4ECD2", darkColor: "#BFD4BD"},
         Finance:{color: "#D2E1EC", darkColor: "#BDCBD4"},
@@ -9,5 +9,6 @@ export default function mapIndustryToColor(industry: Industry) {
         ECommerce: {color: "#EDD3D3", darkColor: "#D4BCBC"},
     };
 
-    return industryColors[industry]
+
+    return industry ? industryColors[industry] : {color: "#815E83", darkColor: "#613664"}
 }
