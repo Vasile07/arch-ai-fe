@@ -5,7 +5,7 @@ import SearchAndFilterHeader from "../components/ProjectsPage/SearchAndFilterHea
 import { Industry } from "../types/Industry";
 import type Project from "../types/Project";
 import "./css/ProjectsPage.css"
-import { ProjectSortCriteria, type ProjectSortCriterion } from "../types/ProjectSortCryteria";
+import { ProjectSortCriteria } from "../types/ProjectSortCryteria";
 
 function sortProjects(
         projects: Project[],
